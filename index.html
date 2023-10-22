@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="forest" id="theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <main class=" flex flex-col justify-center items-center">
+        <div class="">
+            <div class="flex gap-3 mt-3">
+                <form autocomplete="on">
+                    <input name="userInput" id="userSearch" type="text" placeholder="Seacrh City"
+                        class="input input-bordered w-80" />
+                </form>
+                <button id="searchbtn" class="btn btn-primary">Search</button>
+
+            </div>
+        </div>
+        <div class="flex justify-center mt-5">
+            <div class="card w-[650px] bg-base-300 shadow-xl">
+                <div class="card-body flex justify-center items-center">
+                    <h2 class="card-title">
+                        <span id="cityName"> Dhaka</span>
+                        <div id="badgeId" class="badge badge-secondary">NEW</div>
+                    </h2>
+                    <p><span id="temp"></span>°C</p>
+                    <div class="card-actions ">
+                        <span class="font-bold">Wind speed :</span>
+                        <p id="wind"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./App/app.js"></script>
+</body>
+</html>
